@@ -10,6 +10,8 @@ public class GetMinimalNumberArray {
             }
         }
     }
+
+    // Линейная сложность О(n), проходим по всем n эелементам массива чтобы найти минимальный
     void getInfoMinNumberArray(){
         System.out.println(minNumber);
     }

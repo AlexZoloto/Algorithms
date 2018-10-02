@@ -32,10 +32,10 @@ public class Application {
     }
     private static int extendNumber(int number, int powerNumber){
         int result = 1;
-        for (int i = 0; i < powerNumber; i++) {
+        for (int i = 0; i < powerNumber - 1; i++) {
             result = result * number;
         }
-        return result;
+        return result * number;
     }
 
 }

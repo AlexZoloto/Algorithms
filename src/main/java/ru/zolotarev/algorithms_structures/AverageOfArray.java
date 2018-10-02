@@ -12,6 +12,7 @@ public class AverageOfArray {
         System.out.println(averageNumberArray);
     }
 
+    // Линейная сложность О(n), один проход по массиву и операция деления
     void getInfoAverageNumberArray(){
         System.out.println(averageNumberArray);
     }
