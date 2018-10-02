@@ -1,4 +1,4 @@
-package ru.zolotarev.algorithms_structures;
+package main.java.ru.zolotarev.algorithms_structures;
 
 
 import java.util.Scanner;

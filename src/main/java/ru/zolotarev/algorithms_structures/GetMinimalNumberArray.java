@@ -1,4 +1,4 @@
-package ru.zolotarev.algorithms_structures;
+package main.java.ru.zolotarev.algorithms_structures;
 
 public class GetMinimalNumberArray {
     private int[] numbers = {4, 1, 7};

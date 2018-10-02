@@ -1,4 +1,4 @@
-package ru.zolotarev.algorithms_structures;
+package main.java.ru.zolotarev.algorithms_structures;
 
 public class AverageOfArray {
     private int[] numbers = {1, 2, 3, 4, 5, 6, 7};
