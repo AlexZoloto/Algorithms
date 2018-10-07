@@ -16,8 +16,8 @@ public class Application {
         array.deleteValue(2);
         array.getInfo();
         System.out.println("-------------");
-        array.sortBubbleV3();
-        array.getInfo();
+        array1.sortCounting();
+        array1.getInfo();
         System.out.println("133344567889");
     }
 }
