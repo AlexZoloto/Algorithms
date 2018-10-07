@@ -224,27 +224,20 @@ public class Array {
 //    public void sortCounting() {
 //        int[] temp = new int[size];
 //        int count = 0;
-//        int repeat = 0;
 //
 //        for (int i = 0; i < size; i++) {
 //            if (arr[i] == 6) {
 //                for (int j = 0; j < size; j++) {
-//                    if (arr[i] > arr[j]) {
+//                    if (arr[i] >= arr[j]) {
 //                        count++;
 //                    }
-//                    if (arr[i] == arr[j]) {
-//                        repeat++;
-//                    }
-//                    temp[count + repeat] = arr[i];
+//                    temp[count] = arr[i];
 //                    count = 0;
-//                    repeat = 0;
 //                }
 //            }
-//            for (int i = 0; i < size; i++) {
-//                arr[i] = temp[i];
-//            }
+//            arr[i] = temp[i];
 //        }
-//        System.out.println(count+repeat);
+//        System.out.println(count);
 //    }
 
 
