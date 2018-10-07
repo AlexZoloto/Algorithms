@@ -151,21 +151,19 @@ public class Array {
 
     //Чётно-нечётная сортировка
     public void sortBubbleV1() {
-        boolean noChange = false;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size - 1; j += 2) {
                 if (arr[j] > arr[j + 1]) {
                     swap(j, j + 1);
-                    noChange = false;
                 }
             }
             for (int j = 1; j < size - 1; j += 2) {
                 if (arr[j] > arr[j + 1]) {
                     swap(j, j + 1);
-                    noChange = false;
                 }
             }
         }
+        isSorted = true;
     }
 
     //Шейкерная сортировка
@@ -221,25 +219,23 @@ public class Array {
         isSorted = true;
     }
 
-//    public void sortCounting() {
-//        int[] temp = new int[size];
-//        int count = 0;
-//
-//        for (int i = 0; i < size; i++) {
-//            if (arr[i] == 6) {
-//                for (int j = 0; j < size; j++) {
-//                    if (arr[i] >= arr[j]) {
-//                        count++;
-//                    }
-//                    temp[count] = arr[i];
-//                    count = 0;
-//                }
-//            }
-//            arr[i] = temp[i];
-//        }
-//        System.out.println(count);
-//    }
-
+    public void sortCounting() {
+        int[] temp = new int[size];
+        int count = 0;
+        for (int i = 0; i < size; i++) {
+            temp[i] = 0;
+            for (int j = 0; j < size; j++) {
+                if (arr[i] > arr[j]){
+                    count++;
+                }
+                temp[count] = arr[i];
+                count = 0;
+            }
+        }
+        for (int i = 0; i < size; i++) {
+            System.out.print(temp[i]);
+        }
+    }
 
     public void getInfo() {
         for (int i = 0; i < length(); i++) {
