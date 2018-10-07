@@ -1,41 +1,23 @@
 package main.java.ru.zolotarev.algorithms_structures;
 
-
-import java.util.Scanner;
-
 public class Application {
-    static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        System.out.println("Возведение в степень");
-        System.out.println(extendNumber(getNumber(), getPowerNumber()));
-
-        GetMinimalNumberArray getMinimalNumberArray = new GetMinimalNumberArray();
-        getMinimalNumberArray.foundMinNumber();
-        getMinimalNumberArray.getInfoMinNumberArray();
-
-        AverageOfArray averageOfArray = new AverageOfArray();
-        averageOfArray.foundAverageNumberArray();
-        averageOfArray.getInfoAverageNumberArray();
+        Array array = new Array(3, 5, 2, 8, 4, 2, 6, 3, 4, 7, 1, 8, 5, 9, 3, 1);
+        Array array1 = new Array(3, 2, 6, 4, 7, 9, 1, 4);
+        array.getInfo();
+        System.out.println("-------------");
+        array.delete();
+        array.getInfo();
+        System.out.println("-------------");
+        array.delete(1);
+        array.getInfo();
+        System.out.println("-------------");
+        array.deleteValue(2);
+        array.getInfo();
+        System.out.println("-------------");
+        array.sortBubbleV3();
+        array.getInfo();
+        System.out.println("133344567889");
     }
-
-    private static int getNumber(){
-        System.out.println("Введите число");
-        String numberScanner = scanner.next();
-        int number = Integer.valueOf(numberScanner);
-        return number;
-    }
-    private static int getPowerNumber(){
-        System.out.println("Введите степень");
-        String powerNumberScanner = scanner.next();
-        int powerNumber = Integer.valueOf(powerNumberScanner);
-        return powerNumber;
-    }
-    private static int extendNumber(int number, int powerNumber){
-        int result = 1;
-        for (int i = 0; i < powerNumber - 1; i++) {
-            result = result * number;
-        }
-        return result * number;
-    }
-
 }
